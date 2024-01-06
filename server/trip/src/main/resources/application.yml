@@ -1,0 +1,14 @@
+#mysql连接数据库配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver #驱动
+    url: jdbc:mysql://47.120.3.86:3306/trip #数据库地址
+    username: trip #用户名
+    password: 1234 #密码
+#mybatis基本设置
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #输出日志到控制台
+    map-underscore-to-camel-case: true #开启驼峰命名自动映射
+server:
+  port: 8080
